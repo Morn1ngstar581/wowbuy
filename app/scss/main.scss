@@ -1,0 +1,18 @@
+@import "variables"; //пишем переменные
+@import "reset"; //сборс стилей
+@import "fonts"; //подключаем шрифты (локально)
+@import "container";
+@import "swiper";
+@import "swiper-vars";
+@import "typography";
+@import "mixin"; //миксины
+//подключаем БЭМ блоки
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/trend";
+@import "blocks/product";
+@import "blocks/my-account";
+@import "blocks/single-product";
+@import "blocks/cart";
+@import "blocks/checkout";
+@import "blocks/thankyou";

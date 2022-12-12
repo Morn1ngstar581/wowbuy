@@ -1,0 +1,121 @@
+.header {
+    background-color: #e5e5e5;
+    padding: 20px 0;
+    .menu {
+        position: fixed;
+        margin-top: -20px;
+        z-index: 1000;
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(24, 7, 87, 0.663);
+        justify-content: center;
+        align-items: center;
+        &__button {
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        &__closebtn {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            margin: 20px 20px;
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            gap: 20px;
+            align-items: center;
+        }
+        &__link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 22px;
+            line-height: 24px;
+            font-weight: 600;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__brand {
+        width: 180px;
+        height: auto;
+    }
+    .navbar {
+        &__list {
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+            align-items: center;
+        }
+        &__link {
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        &__link-active {
+            color: $c-main-blue;
+            text-decoration: none;
+        }
+        &__openbtn {
+            display: none;
+        }
+        @include tablet-lg {
+            &__openbtn {
+                display: block;
+            }
+            &__link {
+                display: none;
+            }
+        }
+    }
+    &__right {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .cart {
+        &__link {
+            text-decoration: none;
+            position: relative;
+        }
+        &__count {
+            position: absolute;
+            color: $c-main-white;
+            background-color: #0c0c0c;
+            border-radius: 50%;
+            top: -20px;
+            right: -20px;
+            padding: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+    }
+    .search__form {
+        border: none;
+        border-radius: 8px;
+        padding: 5px;
+        outline: none;
+    }
+    .visible {
+        display: flex;
+    }
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}

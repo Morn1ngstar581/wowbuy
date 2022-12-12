@@ -1,0 +1,25 @@
+@import "mixin";
+.container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    @include laptop {
+        width: 100%;
+    }
+    @include tablet-lg {
+        width: 100%;
+    }
+    @include tablet-md {
+        width: 100%;
+    }
+    @include mobile-lg {
+        width: 100%;
+    }
+    @include mobile-md {
+        width: 100%;
+    }
+    @include mobile-sm {
+        width: 100%;
+    }
+}

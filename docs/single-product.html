@@ -1,0 +1,142 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css?t=1670715155095">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link >
+</head>
+
+<body> <header class="header">
+    <div id="MenuLayout" class="menu">
+        <button class="menu__closebtn menu__button" id="MenuButtonClose">
+            <svg viewPort="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="40" x2="40" y2="1" stroke="black" stroke-width="5" />
+                <line x1="1" y1="1" x2="40" y2="40" stroke="black" stroke-width="5" />
+            </svg></button>
+        <div class="container menu__container">
+            <ul class="menu__list">
+
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        Каталог
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        О нас
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        Гарантии
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        Инструкции
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        Обратная связь
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header__menu">
+
+            <div class="brand">
+                <img src="img/logo-img-header.svg" alt="" class="header__brand">
+            </div>
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <button id="MenuButtonOpen" class="navbar__openbtn menu__button">
+                            <svg viewBox="0 0 100 80" width="40" height="40">
+                                <rect width="100" height="10" rx="5"></rect>
+                                <rect y="30" width="100" height="10" rx="5"></rect>
+                                <rect y="60" width="100" height="10" rx="5"></rect>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            Гарантии
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            Инструкции
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            Обратная связь
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <div class="account">
+                    <a href="#" class="account__link">
+                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.3225 13.2147C12.008 13.162 11.5053 13.047 11.3671 12.6448C11.3468 12.5767 11.3355 12.5062 11.3335 12.4352V11.3194C13.2347 10.3795 14.5573 8.32197 14.5573 5.92946C14.5573 2.65476 12.0848 0 9.036 0C5.98627 0 3.51468 2.65476 3.51468 5.92946C3.51468 8.32197 4.83411 10.3795 6.73575 11.3194V12.4352C6.7341 12.4923 6.72399 12.5488 6.70575 12.6029C6.58395 13.047 6.13035 13.1652 5.8422 13.2147C1.87119 13.8946 0 16.0435 0 20H18.0729C18.0729 16.0435 16.3667 13.8946 12.3225 13.2147"
+                                fill="black" />
+                        </svg>
+
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="#" class="cart__link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM0 0V2H2L5.6 9.59L4.25 12.04C4.09 12.32 4 12.65 4 13C4 14.1 4.9 15 6 15H18V13H6.42C6.28 13 6.17 12.89 6.17 12.75L6.2 12.63L7.1 11H14.55C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C19.96 3.34 20 3.17 20 3C20 2.45 19.55 2 19 2H4.21L3.27 0H0ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                fill="black" />
+                        </svg>
+                        <span class="cart__count">1</span>
+                    </a>
+                </div>
+                <div class="search">
+                    <input type="search" class="search__form" placeholder="search">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</header>
+<div class="breadcrumb">
+    <div class="container">
+
+    </div>
+</div>
+<div class="single-product">
+    <div class="container">
+
+    </div>
+</div>
+
+
+<script src="js/main.js?t=1670715155095"></script>
+
+</body>
+
+</html>

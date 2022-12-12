@@ -1,0 +1,21 @@
+.hero{
+  height: 94vh;
+  background: url('../img/got.jpg') center no-repeat / cover;
+  position: relative;
+  &__content{
+    color:$c-main-white;
+
+    display: flex;
+    align-items: center;
+  }
+}
+.hero:after{
+  position: absolute;
+  content: '';
+  background-color: rgba(31, 31, 31, 0.7);
+  backdrop-filter: blur(2px);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

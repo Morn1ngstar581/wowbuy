@@ -1,0 +1,74 @@
+.trend {
+    margin-top: 34px;
+    &__h2 {
+        color: #fff;
+        margin-bottom: 34px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 25px;
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    &__card {
+        position: relative;
+        min-height: 245px;
+        display: flex;
+        box-shadow: inset 0px -40px 55px 35px #29262e;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        border-radius: 10px;
+    }
+    &__img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        position: absolute;
+        z-index: -2;
+    }
+    &__name {
+        color: $c-main-white;
+        position: absolute;
+        padding: 5%;
+        font-size: 16px;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
+        line-height: 26px;
+    }
+    &__cart {
+        border-radius: 10px 0px;
+        background-color: $c-main-blue;
+        color: $c-main-white;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        box-shadow: 0px 0px 15px #0072ce;
+    }
+    &__price {
+        position: absolute;
+        color: #fff;
+        bottom: 5px;
+        right: 95px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .label {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+}
+
+.wow {
+    width: 20px;
+    height: 20px;
+}
