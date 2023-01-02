@@ -1,0 +1,353 @@
+.login {
+  padding: 150px 0;
+
+  &__logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__h2 {
+    margin-bottom: 20px;
+  }
+
+  &__main {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $c-main-white;
+    padding: 50px 0;
+    border-radius: 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 400px;
+    height: 50px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    appearance: none;
+    font: bold 18px/26px OpenSans, Sans-serif;
+    color: #000;
+    padding: 20px 20px 12px 20px;
+    background-color: #E5E5E5;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000;
+    opacity: .8;
+    position: absolute;
+    left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .2s ease, opacity .2s ease;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+
+  &__input:focus ~ &__placeholder,
+  &__input:valid ~ &__placeholder {
+    transform: translateY(-100%) scale(.7);
+    opacity: .5;
+  }
+
+  &__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 400px;
+    background: darkgrey;
+  }
+
+  &__line:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 400px;
+    background: $c-main-blue;
+    transform: scale(0);
+    transform-origin: left top;
+    transition: transform .2s ease;
+  }
+
+  &__input:focus ~ &__line:after,
+  &__input:valid ~ &__line:after {
+    transform: scale(1);
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    background-color: $c-main-blue;
+    color: $c-main-white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+  &__btn:hover {
+    box-shadow: 0px 0px 15px #0072CE;
+    transition: hover .2s ease;
+  }
+
+  &__register {
+    text-decoration: none;
+    color: $c-main-blue;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &__form-account{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+.login__secondary {
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $c-main-white;
+  padding: 50px 0;
+  border-radius: 10px;
+
+}
+
+.show {
+  display: flex;
+}
+
+.woocommerce-privacy-policy-text {
+  max-width: 390px;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 10px;
+
+  a {
+    text-decoration: none;
+    color: $c-main-blue;
+  }
+}
+
+.login__forgot {
+  max-width: 400px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.my-account {
+  padding: 150px 0;
+  &__body {
+    background-color: $c-main-white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  &__body:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 16.9%;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: $c-main-grey;
+  }
+
+  &__sidebar {
+    width: 17%;
+
+  }
+
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 230px;
+    list-style-type: none;
+
+  }
+
+  &__item {
+    max-width: 230px;
+
+
+    a {
+      text-decoration: none;
+      line-height: 22px;
+      color: #000;
+      padding: 15px;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  &__item:hover {
+    background-color: $c-main-blue;
+    a {
+      color: $c-main-white;
+    }
+  }
+  &__item:first-child{
+    border-radius: 10px 0 0 0;
+  }
+  &__item:last-child{
+    border-radius: 0 0 0 10px;
+  }
+  &__content{
+    width: 83%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+  }
+  &__h2{
+    margin-bottom: 30px;
+  }
+  &__text{
+    a{
+      text-decoration: none;
+      color:$c-main-blue;
+    }
+  }
+  &__table{
+    border-collapse: collapse;
+  }
+  &__thead{
+    border-bottom: 0.5px solid $c-main-grey;
+  }
+  &__header-item{
+    padding-bottom: 10px;
+  }
+  &__tr{
+    text-align: center;
+  }
+  &__tbody-item{
+    padding: 10px
+  }
+  &__tbody-link{
+    text-decoration: none;
+    color:$c-main-blue;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  &__tr{
+    border-bottom: 0.5px solid $c-main-grey;
+  }
+  &__pagination{
+    margin: auto;
+
+  }
+  &__pagination-link{
+    text-decoration: none;
+    font-weight: 600;
+    color:$c-main-white;
+    background-color: $c-main-blue;
+    padding:10px 20px;
+    border-radius: 10px;
+  }
+  &__order-details{
+    margin-top: 10px;
+  }
+  &__order-number{
+    font-weight: 700;
+  }
+  &__order-date{
+
+    font-weight: 700;
+  }
+  &__order-status{
+    background-color: $c-main-blue;
+    color:$c-main-white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: 700;
+  }
+  &__order-info{
+
+  }
+
+  &__detail-title{
+    margin-bottom: 10px;
+  }
+  &__table-order-details{
+    width: 100%;
+    text-align: left;
+  }
+  &__tr-order{
+    border-bottom: 0.5px solid #c4c4c4;
+    text-align: left;
+    padding: 10px 0;
+  }
+  &__tbody-item-order{
+    padding: 10px 0;
+  }
+  &__tfoot-tr{
+    border-bottom: 0.5px solid #c4c4c4;
+  }
+  &__row{
+    padding: 10px 0;
+  }
+
+}
+.is-active{
+  background-color: $c-main-blue;
+  a {
+    color: $c-main-white;
+  }
+}
+.login-save-btn{
+  width: 50%;
+}
+.order-again{
+  margin-top: 10px;
+ &__btn{
+   text-decoration: none;
+   color:$c-main-blue;
+   font-weight: 600;
+ }
+}
+.my-account__content{
+  .woocommerce-notices-wrapper{
+    display: none;
+  }
+}

@@ -1,0 +1,144 @@
+.cart{
+  &__main{
+    background-color: $c-main-white;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  &__grid-head{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    border-bottom: 0.5px solid #c4c4c4;
+    padding-bottom: 10px;
+    justify-items: center;
+    grid-gap: 20px;
+    span{
+      font-weight: 700;
+    }
+  }
+  &__grid-body{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  &__product-name{
+    a{
+      text-decoration: none;
+      color:#000;
+      font-weight: 600;
+    }
+
+  }
+  &__remove{
+    text-decoration: none;
+    font-weight: 600;
+    color:$c-main-blue;
+  }
+  &__bottom{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+  }
+  &__coupon{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &__input{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: 0.5px solid $c-main-grey;
+    outline: none;
+    appearance: none;
+  }
+  &__btn-coupon{
+    background-color: $c-main-blue;
+    color:$c-main-white;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    appearance: none;
+  }
+  &__btn-submit{
+    margin-left: auto;
+  }
+  &__btn{
+    background-color: $c-main-blue;
+    color:$c-main-white;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    appearance: none;
+  }
+  &__total{
+    margin: 20px 0;
+  }
+  &__subtotal{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__total-amount{
+    margin: 20px 0;
+  }
+  &__checkout{
+    display: flex;
+    a{
+      background-color: $c-main-blue;
+      color:$c-main-white;
+      border-radius: 10px;
+      padding: 10px;
+      font-weight: 600;
+      border: none;
+      outline: none;
+      appearance: none;
+      text-decoration: none;
+    }
+    a:hover{
+      box-shadow: 0px 0px 15px #0072CE;
+
+    }
+  }
+  &__discount{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+  }
+  &__order-total{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+.attachment-custom-cart-image{
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+}
+.product-quantity .quantity input{
+  width: 70px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  appearance: none;
+  border-radius: 10px;
+  border: 0.5px solid $c-main-grey;
+}
+.woocommerce-remove-coupon{
+  text-decoration: none;
+  color:$c-main-blue;
+}
+.woocommerce-error{
+  list-style-type: none;
+  padding: 10px 0;
+  border-radius: 10px;
+  text-align: center;
+  color:$c-main-white;
+  font-weight: 600;
+}

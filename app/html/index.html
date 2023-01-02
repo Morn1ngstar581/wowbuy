@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+
+@@include('blocks/head.html') @@include('blocks/header.html') @@include('blocks/hero.html') @@include('blocks/trend.html') @@include('blocks/product.html') @@include('blocks/footer.html')
+
+<!-- подключаем js -->
+<script src="js/main.js"></script>
+
+<script>
+    let MenuButtonOpen = document.getElementById('MenuButtonOpen');
+    let MenuButtonClose = document.getElementById('MenuButtonClose');
+    let MenuLayout = document.getElementById('MenuLayout');
+
+    MenuButtonOpen.addEventListener('click', function() {
+        MenuLayout.classList.add('visible');
+    })
+    MenuButtonClose.addEventListener('click', function() {
+        MenuLayout.classList.remove('visible');
+    })
+</script>
+
+</body>
+
+</html>

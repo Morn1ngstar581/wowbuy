@@ -1,0 +1,271 @@
+.breadcrumb {
+  background-color: #e5e5e5;
+
+  a {
+    text-decoration: none;
+    color: $c-main-white;
+    font-weight: 500;
+  }
+}
+
+.single-product {
+  position: relative;
+  &__main {
+    display: flex;
+    gap: 50px;
+    background-color: $c-main-white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 80px;
+    flex-wrap:wrap;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  &__left{
+    width: 40%;
+  }
+  &__right{
+    width: 50%;
+  }
+
+  &__category-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  &__sku-wrapper {
+    font-weight: 600;
+  }
+
+  &__category {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: $c-main-blue;
+    }
+  }
+
+  &__price{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 8px 0;
+  }
+  &__cart{
+    display: flex;
+    gap: 20px;
+  }
+  &__quantity{
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    padding: 0 7px;
+    font-size: 18px;
+  }
+  &__btn{
+    max-width: 100%;
+    padding: 0px 40px;
+    cursor: pointer;
+    background-color: $c-main-blue;
+    color: $c-main-white;
+    font-weight: 600;
+    border: none;
+    appearance: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  &__btn:hover{
+    box-shadow: 0px 0px 15px #0072CE;
+  }
+  &__bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__tabs{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+  }
+  &__tabs-item{
+    display: inline-block;
+  }
+  &__tabs-link{
+    display: inline-block!important;
+    text-decoration: none;
+    background-color: $c-main-blue;
+    padding: 1em!important;
+    color:$c-main-white;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  &__tabs-link:hover{
+    box-shadow: 0px 0px 15px #0072CE;
+  }
+  &__tabs-body{
+    padding-top: 40px;
+    width: 100%;
+  }
+  &__tabs-title{
+    text-align: center;
+  }
+  &__comment-user{
+    display: flex;
+    gap: 30px;
+  }
+  &__comment-list{
+    list-style-type: none;
+    margin-left: 40px;
+  }
+  &__review-form{
+    padding-top: 40px;
+  }
+  &__comment-title{
+    margin-bottom: 10px;
+  }
+}
+.woocommerce-notices-wrapper{
+  padding: 10px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.woocommerce-message{
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color:$c-main-white;
+  font-weight: 500;
+  a{
+    margin-right: 10px;
+    text-decoration: none;
+    color:$c-main-grey;
+  }
+}
+.active{
+  box-shadow: 0px 0px 15px #0072CE;
+  border-radius: 10px;
+}
+.comment-notes{
+  margin-bottom: 10px;
+}
+#email-notes{
+  display: none;
+}
+.stars{
+  margin-top: 10px;
+}
+.comment-form-author{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 30%;
+  margin-bottom: 20px;
+  label{
+    margin-bottom: 10px;
+  }
+  input{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid $c-main-grey;
+  }
+}
+.comment-form-rating{
+  label{
+    margin-bottom: 10px ;
+  }
+}
+.comment-form-comment{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 20px 0;
+  label{
+    margin-bottom: 10px;
+  }
+  textarea{
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    border:1px solid $c-main-grey;
+  }
+}
+.comment-form-email{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 30%;
+  margin-bottom: 20px;
+  label{
+    margin-bottom: 10px;
+  }
+  input{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid $c-main-grey;
+  }
+}
+.comment-form-cookies-consent{
+  margin-bottom: 20px;
+  label{
+    margin-bottom: 10px;
+  }
+}
+.form-submit{
+  .submit{
+    padding: 1em!important;
+    color:$c-main-white;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: $c-main-blue;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  .submit:hover{
+    box-shadow: 0px 0px 15px #0072CE;
+
+  }
+}
+.related-products{
+  background-color: #1f1f1f;
+  padding: 20px;
+  &__title{
+    margin-bottom: 20px;
+    color:$c-main-white;
+  }
+}
+.woocommerce-noreviews{
+  background-color: #3d9cd2;
+  padding: 10px;
+  border-radius: 10px;
+  color:$c-main-grey;
+  text-align: center;
+}

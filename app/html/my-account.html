@@ -1,0 +1,154 @@
+@@include('blocks/head.html') @@include('blocks/header.html')
+
+<div class="login">
+    <div class="container">
+        <div class="login__main   ">
+            <img src="img/logo-img.png" alt="" class="login__logo">
+            <h2 class="login__h2 h2">
+                Войти в учетную запись
+            </h2>
+            <form action="#" class="login__form">
+                <div class="login__wrapper">
+                    <input required="required" type="text" class="login__input" id="name">
+                    <label class="login__placeholder">Логин или п</label>
+                    <div class="login__line"></div>
+                </div>
+                <div class="login__wrapper">
+                    <input required="required" type="password" class="login__input" id="password">
+                    <label class="login__placeholder">Your password</label>
+                    <div class="login__line"></div>
+                </div>
+                <div class="login__wrapper">
+                    <button class="btn login__btn login-submit-btn" type="submit">Войти</button>
+                </div>
+
+            </form>
+            <p class="login__not">
+                Нет учетной записи? <a type="button" data-target="test" class="login__register"> Зарегистрируйся!</a>
+            </p>
+        </div>
+        <div class="login__secondary" id="test">
+            <img src="img/logo-img.png" alt="" class="login__logo">
+            <h2 class="login__h2 h2">
+                Регистрируйся, пес!
+            </h2>
+            <form action="#" class="login__form">
+                <div class="login__wrapper">
+                    <input required="required" type="text" class="login__input" id="register-name">
+                    <label class="login__placeholder">Логин или п</label>
+                    <div class="login__line"></div>
+                </div>
+                <div class="login__wrapper">
+                    <input required="required" type="password" class="login__input" id="register-password">
+                    <label class="login__placeholder">Your password</label>
+                    <div class="login__line"></div>
+                </div>
+                <div class="login__wrapper">
+                    <button class="btn login__btn login-submit-btn" type="submit">Войти</button>
+                </div>
+
+            </form>
+            <p class="login__not">
+                Нет учетной записи? <a type="button" data-target="test" class="login__register"> Зарегистрируйся!</a>
+            </p>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="my-account">
+    <div class="container">
+        <div class="my-account__body">
+            <div class="my-account__sidebar">
+                <ul class="my-account__list">
+                    <li class="my-account__item">
+                        <a href="">Панель управления</a>
+
+                    </li>
+                    <li class="my-account__item">
+                        <a href="">
+                            Заказы
+                        </a>
+                    </li>
+                    <li class="my-account__item">
+                        <a href="">
+                            Загрузки
+                        </a>
+                    </li>
+                    <li class="my-account__item">
+                        <a href="">
+                            Адрес
+                        </a>
+                    </li>
+                    <li class="my-account__item">
+                        <a href="">
+                            Детали профиля
+                        </a>
+                    </li>
+                    <li class="my-account__item">
+                        <a href="">
+                            Выйти
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="my-account__content">
+                <div class="my-account__h2 h2">Добро пожаловать в панель управления!</div>
+                <p class="my-account__text">
+                    <a href=""></a>
+                </p>
+
+                <table class="my-account__table">
+                    <thead class="my-account__thead">
+                        <tr>
+                            <th class="my-account__header-item">
+                                <span>Заказ</span>
+                            </th>
+                            <th class="my-account__header-item">
+                                <span>Дата</span>
+
+                            </th>
+                            <th class="my-account__header-item">
+                                <span>Статус</span>
+
+                            </th>
+                            <th class="my-account__header-item">
+                                Итого
+                            </th>
+                            <th class="my-account__header-item">
+                                Действие
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="my-account__tbody">
+                        <tr class="my-account__tr">
+                            <td class="my-account__tbody-item">
+                                <span> <a href="#" class="my-account__tbody-link">3</a> </span>
+                            </td>
+                            <td class="my-account__tbody-item">
+                                <span>18.12.2022</span>
+                            </td>
+                            <td class="my-account__tbody-item">
+                                <span>Обработка</span>
+                            </td>
+                            <td class="my-account__tbody-item">
+                                <span>150.50</span>
+                            </td>
+                            <td class="my-account__tbody-item">
+                                <span><a href="#" class="my-account__tbody-link">Подробнее</a></span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+                <div class="my-account__pagination">
+                    <a href="#" class="my-account__pagination-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
